@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="camel_styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="camel_logo.svg">
+<script src="camel_contact_us.js" defer></script>
+
+
+    <title>
+        Contact Us | The Ladder Sling 
+    </title>
+</head>
+<body>
+    
+    <nav class="nav-navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars nav-toggle" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+        <a href= "index.html"><img class="nav-logo" src="camel_logo.svg" alt="camel logo"></a>
+        <a class="nav-title" href="index.html">The Ladder Sling</a>
+        <ul class="main-navigation" id="myNavbarLinks" role="navigation">
+            <li class="nav-list"><a class="nav-item" href="index.html">Home</a></li>
+            <li class="nav-list"><a class="nav-item active" href="camel_contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-page-title"> <p> Contact Us for Purchase Inquiry or Questions!</p></div>
+    <hr class="gold-line">
+    <fieldset class="description_box">
+        <legend>Please Enter Your Info: </legend><br>
+        <form method="post" name="contact_form">
+            <label for="first-name">First Name:</label><br>
+            <input type="text" class="required" id="first-name" name="first-name"  placeholder="Required" required> <br><br>
+            <label for="email">Email: </label><br>
+            <input type="text" class="required" id="email" name="email"> <br><br>
+            <label for="phone">Phone Number: </label><br>
+            <input type="text" id="phone" name="phone" > <br><br>
+            <label for="message">Message: </label> <br>
+            <textarea class="textarea" type="textbox" id="message" name="message" placeholder="Type Here..."></textarea> <br><br>
+            
+            <input type="submit" value="Submit" id="submit" name="submit">
+            <button class="form-clear" type="button" id="clearForm">Clear Form </button>
+        </form>
+        
+    </fieldset>
+
+    <hr class="black-line" style="padding-top:20px">
+
+        
+        
+</body>
+</html>

@@ -1,0 +1,529 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* gold: #fbac01
+     * black: #191414 */
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(235,167,24,1) 75%);
+   
+}
+
+/* START NAVBAR STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav.nav-navbar {
+    height: 110px; /* height of navbar */
+     /* background color of navbar */
+}
+
+nav img.nav-logo {
+    width: 120px; /* changes wisth of camel.svg logo */
+    position: absolute; /* locks position of camel.svg */
+    top: 10px; /* positions camel.svg 10 pixels from top of navbar */
+    left: 12%; /* positions camel.svg 12% from left of navbar */
+}
+
+.nav-title {
+    display: inline-block; /* display: inline-block allows to set a width and height on the element */
+    line-height: 80px; 
+    margin: 0 15px; /* margin top and bottom: 0px, padding left and right 15px */
+    margin-top: 15px;
+    position: absolute;
+    left: 20%; /* positions title 20% from left of navbar */
+    font-size: 40px; /* size of title font */
+    color: white; /* text color of title */
+}
+
+nav ul.main-navigation{
+    float: right; /* positions main-navigation pushed to right side of navbar */
+    margin-right: 25px; /* start of main-navigation pushed 25px from right side of navbar */
+}
+
+nav ul li.nav-list {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px; /* margin top and bottom: 0px, padding left and right 15px */
+    margin-top: 15px;
+}
+
+
+nav ul li a.nav-item {
+    position: relative;
+    color: white; /* color of navbar navigation item */
+    font-size: 18px;
+    padding: 5px 0; /* padding top and bottom: 5px, padding left and right 0px */
+    text-transform: uppercase;
+}
+
+/* when header text element is active */
+nav ul li a.active {
+    color: #fbac01;/* changes color of text when active */
+}
+
+nav a.nav-title:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 8px;
+    height: 4px;
+    width: 100%;
+    background: #fbac01; /* changes color of line movement hover animation CURSER ON */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav a.nav-title:hover:before {
+    background: #fbac01;  /* changes color of line movement hover animation CURSER OFF */
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav ul li a.nav-item:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #fbac01; /* changes color of line movement hover animation CURSER ON */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+}
+
+nav ul li a.nav-item:hover:before {
+    background: #fbac01;  /* changes color of line movement hover animation CURSER OFF */
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+/* END NAVBAR STYLES */
+
+
+div {
+    margin: 10px 10%; } /* main page content margin top and bottom: 10px, padding left and right 10% */
+
+div.home-page-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+    
+}
+hr.gold-line {
+    margin: 10px 10%;
+    border-top: 1px solid #fbac01;
+}
+video {
+    margin: 10px 20%;
+    display: block;
+    width: 60%;
+    height: 60%;
+    border-radius: 8px;
+}
+
+.slidershow-container {
+    
+}
+.slideshow-img-content{
+		list-style:none;
+		overflow:hidden;
+		white-space:nowrap;
+		padding:5px;
+    max-width: 80%; /* changes size of slideshow container */
+    display: block;
+    margin: auto;
+    
+	}
+
+	.tabs{
+		display:inline-block;
+		width:50%; /* changes size of photos in slideshow itself */
+		position:relative;
+		z-index:1;
+	}
+	ul img{
+		max-width:100%;
+        border-radius: 8px;
+        
+	}
+.leftArrowBtn {
+    display: inline-block;
+    width: 10%;
+    padding: 12px 32px; /* padding top and bottom: 16px, padding left and right 32px */
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px; /* margin top and bottom: 10px, padding left and right 0px */
+    margin-left: 40%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+	
+  }
+
+.leftArrow {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+   .rightArrowBtn {
+    display: inline-block;
+    width: 10%;
+    padding: 12px 32px; /* padding top and bottom: 16px, padding left and right 32px */
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px; /* margin top and bottom: 10px, padding left and right 0px */
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    
+  }
+.leftArrowBtn:hover {
+    opacity: .8;
+}
+
+.rightArrowBtn:hover {
+    opacity: .8;
+}
+
+.description_box {
+    border: solid;
+    border-color: black;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    padding: 5px 10px 25px 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 60%;
+}
+
+.description_info {
+    text-align: left;
+}
+hr.black-line {
+    margin: 10px 10%;
+    border-top: 1px solid black;
+}
+fieldset legend {
+  color: white;
+  padding: 0 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+fieldset label {
+  color: black;
+  padding: 0 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+input {
+  border: 1px solid black;
+  padding: 4px 8px;
+	width: 30%;
+}
+input:focus {
+  border: 1px solid #000;
+}
+
+textarea {
+  border: 1px solid #000;
+  padding: 4px 8px;
+	width: 50%;
+  height: 150px;
+}
+textarea:focus {
+  border: 1px solid blue;
+}
+input[type="submit"] {
+    margin-left: 4%;
+    margin-right: 2%;
+    width: 20%;
+    padding: 6px 16px; /* padding top and bottom: 6px, padding left and right 16px */
+    font-size: 20px;
+    text-align: center;
+    background-color: blue; 
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form-clear {
+    width: 20%;
+    padding: 6px 16px; /* padding top and bottom: 6px, padding left and right 16px */
+    font-size: 20px;
+    text-align: center;
+    background-color: #d60000;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form-submit:hover {
+    background-color: #3f2eff;
+}
+.form-clear:hover {
+    background-color: red;
+}
+@media (max-width: 1118px) {
+    nav.nav-navbar {
+			
+			background-color: #191414;/* background color of navbar */
+		}
+		nav img.nav-logo {
+        width: 110px;
+        left: 8%;
+        top: 13px;
+    }
+    .nav-title{
+        left: 20%;
+        font-size: 35px;
+    }
+    div.home-page-title {
+        text-align: center;
+        font-size: 35px;
+        padding-top: 20px;
+        color: white;
+    }
+		textarea {
+				width: 70%;
+				height: 150px;
+		}
+		input {
+				width: 45%;
+		}
+    input[type="submit"] {
+      margin-left: 12%;
+      width: 25%;
+    }
+		
+    .form-clear {
+      width: 25%;
+    }
+    
+}
+
+@media (max-width: 944px) {
+    nav img.nav-logo {
+        left: 6%;
+        width: 100px;
+        top: 17px;
+    }
+    
+     .nav-title{
+        left: 18%;
+        font-size: 25px;
+    }
+    nav ul li a.nav-item {
+        font-size: 17px;
+    }
+    div.home-page-title {
+        font-size: 25px;
+    }
+    video {
+        margin: 10px 10.5%;
+        display: block;
+        width: 80%;
+        height: 80%;
+        border-radius: 8px;
+    }
+    .slideshow-img-content{
+        max-width: 90%; /* changes size of slideshow container */
+    }
+    hr.gold-line {
+        margin: 10px 5%;
+    }
+    .leftArrowBtn {
+        width: 20%;
+        margin-left: 30%;
+    }
+    .rightArrowBtn {
+        width: 20%;
+    }
+    .description_box {
+        width: 80%;
+    }
+    hr.black-line {
+        margin: 10px 5%;
+    }
+		textarea {
+				width: 70%;
+				height: 150px;
+		}
+
+		input {
+				width: 45%;
+		}
+    input[type="submit"] {
+        margin-left: 8%;
+        width: 25%;
+    }
+}
+@media (max-width: 650px) {
+    nav img.nav-logo {
+        left: 1%;
+        width: 80px;
+        top: 17px;
+    }
+    
+     .nav-title{
+        left: 19%;
+        font-size: 24px;
+    }
+    label #btn {
+        display: block;
+        margin-top: 15px;
+        
+    }
+    ul.main-navigation {
+        position: fixed;
+        width: 100%;
+        height: 100vh; /* height of the drop down navbar */
+        background: #191414;
+        top: 110px;
+        left: -100%; /* slides dropdown navbar tab across full screen on 860px */
+        text-align: center; /* centers the dropdown navbar text */
+        z-index: 2;
+        transition: all .5s; /* speed at which the animation moves across the navbar tab screen */
+        
+    }
+    nav ul li.nav-list{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a.nav-item {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+        margin-top: 15px;
+    }
+    div.home-page-title {
+        font-size: 24px;
+    }
+    video {
+        margin: 10px 5%;
+        width: 90%;
+        height: 90%;
+    }
+    .slideshow-img-content{
+        max-width: 90%; /* changes size of slideshow container */
+    }
+    .tabs{
+		width:100%; /* changes size of photos in slideshow itself */
+	}
+    .leftArrowBtn {
+        width: 45%;
+        margin-left: 4%;
+    }
+    .rightArrowBtn {
+        width: 45%;
+    }
+    .description_box {
+        width: 100%;
+				border: none;
+    }
+		textarea {
+				border: 1px solid #000;
+				padding: 4px 8px;
+				width: 95%;
+				height: 150px;
+		}
+		input {
+				width: 95%;
+		}
+    input[type="submit"] {
+        margin-left: 1%;
+        
+        width: 40%;
+    }
+    .form-clear {
+        width: 50%;
+        
+    }
+
+}
+@media (max-width: 340px) {
+  nav img.nav-logo {
+        left: 1.5%;
+        width: 60px;
+        top: 25px;
+    }
+    
+     .nav-title{
+        left: 17%;
+        font-size: 21px;
+    }
+    label #btn {
+        display: block;
+        margin-top: 15px;
+        
+    }
+    div.home-page-title {
+        font-size: 21px;
+    }
+		input[type="submit"] {
+    margin-left: 0%;
+		margin-bottom: 2%;
+		
+
+    width: 95%;
+}
+.form-clear {
+    width: 95%;
+
+}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+
+body {
+  margin: 0;
+}
+.header{
+    background-color: red;
+    overflow: hidden; /* prevents scrollbars from showing up, even when they're necessary. */
+    padding: 10px 15px; /* padding top and bottom: 10px, padding left and right 20px */
+}
+
+/* header text elements (logo, The Camel, Home, Contact Us) formatting within header container*/
+.header a {
+    float: left; /* places the header text elements (logo, The Camel, Home, Contact Us) on the left side of the container, allowing text and inline elements to wrap around it */
+    text-align: center;/* centers the text elements in respect to their container (i.e. it wont do anything becasue their containter is just the text itself)*/
+    padding: 12px;/* pads the header text elements 12px top, bottom, left, right */
+    color: black; /* changes color of header element links to black instead of dark blue */
+    font-size: 30px;/* font size of each text element */
+    text-decoration: none;/* removes the link line underneath header elements */
+    line-height: 75px;/* changes y-axis of text elements in the container */
+    margin-left: 20px;
+}
+
+/* LOGO element sizing */
+.header a.header-logo-left {
+    /* the svg image is 100x75 you can find out the exact width and height of an image by inspecting it in console */
+    width: 100px;
+    height: 75px;
+    margin-left: 0px;
+    
+}
+
+/* TITLE element formatting */
+.header-center a.title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+
+/* when hovering on a text element in header */
+.header-right a:hover {
+    color: gray;/* changes text color of text when hovering */
+}
+
+/* when header text element is active */
+.header-right a.active {
+    color: blue;/* changes color of text when active */
+}
+
+/* home and contact us position to right side of header container */
+.header-right {
+    float: right;
+}
+
+.header-right .icon {
+    display: none;
+}
+
+/* mobile screen onload */
+@media screen and (max-width: 600px) {
+  .header-right a {display: none;} /* hides header elements */
+  .header-right a.icon {
+    float: right;
+    display: block;
+    padding-top: 50%;
+  }
+  /* LOGO element sizing */
+.header a.header-logo-left {
+    /* the svg image is 100x75 you can find out the exact width and height of an image by inspecting it in console */
+    width: 75px;
+    height: 50px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+  .header-center a.title {
+    font-size: 20px;
+    margin-left: 3%;
+  }
+  .header-right a:hover {
+    color: black;/* changes text color of text to black always */
+}
+
+}
+
+/* when hamburger is clicked */
+@media screen and (max-width: 600px) {
+  .header-right.responsive .icon {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    padding-top: 0%;
+    line-height: 30px;
+    
+  }
+  .header-right {
+    float: left;
+    
+}
+  .header-right.responsive a.btn {
+    position: relative;
+    float: left;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    
+  }
+  .header-right.responsive a.btn.active {
+    color: blue;/* changes color of text when active */
+}
+  
+}
